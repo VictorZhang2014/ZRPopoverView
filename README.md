@@ -1,7 +1,9 @@
 
 # ZRPopoverView
 ZRPopoverView is a popover view that pop UIView with a list of button by customising events and contents.
+#####
 1.If you like invoke this events by block so that Choose No.1 .
+#####
 2.If you like invoke this events by delegate so that Choose No.2.
 
 ### Effect Photo
@@ -95,7 +97,9 @@ $ pod install
 
 # ZRPopoverView
 ZRPopoverView是一个非常好用的弹出菜单，使用者可以自定义内容和事件.
+######
 1.事件的回调，喜欢block的，请使用第一种方式
+#####
 2.事件的回调，喜欢delegate的，请使用第二种方式
 
 ## 如何开始
@@ -165,7 +169,7 @@ $ pod install
     [popover showWithController:self];
 ```
 
-### 显示一个右上角的Popover菜单，主题是浅色，白色背景加黑色文字，事件回调是block，也可以是delegate
+#### 显示一个右上角的Popover菜单，主题是浅色，白色背景加黑色文字，事件回调是block，也可以是delegate
 ```
     NSArray *menus = @[
                        @{ kZRPopoverViewTitle: @"Payment" , kZRPopoverViewIcon: @"btn_Install" },
