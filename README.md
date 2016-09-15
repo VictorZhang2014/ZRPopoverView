@@ -8,8 +8,6 @@ ZRPopoverView is a popover view that pop UIView with a list of button by customi
 
 ### Effect Photo
 ![ZRPopoverView Effect Photo 1](https://github.com/VictorZhang2014/ZRPopoverView/blob/master/pictures/ZRPopoverView_showcase_cn.gif "ZRPopoverView")
-![ZRPopoverView Effect Photo 1](https://github.com/VictorZhang2014/ZRPopoverView/blob/master/pictures/ZRPopoverView_showcase_en.gif "ZRPopoverView")
-
 
 ## How to get started
 -----------------------------------
@@ -78,7 +76,7 @@ $ pod install
     [popover showWithController:self];
 ```
 
-### Show an top of right popover menu and theme is superficial color , which means white background and black character. Events can invoke by block or delegate.
+#### Show an top of right popover menu and theme is superficial color , which means white background and black character. Events can invoke by block or delegate.
 ```
     NSArray *menus = @[
                        @{ kZRPopoverViewTitle: @"Payment" , kZRPopoverViewIcon: @"btn_Install" },
