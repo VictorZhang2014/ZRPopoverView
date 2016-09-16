@@ -65,15 +65,15 @@
         if (self.menuListBackgroundColor) {
             color  = self.menuListBackgroundColor;
         } else {
-           color = [UIColor blackColor];
+            color = [UIColor blackColor];
         }
     }
     
     [color setFill];
     [path fill];
     
-//    [color setStroke];
-//    [path stroke];
+    //    [color setStroke];
+    //    [path stroke];
 }
 
 @end
@@ -151,6 +151,13 @@
 
 - (void)dismiss
 {
+    [self dismiss:^{
+        
+    }];
+}
+
+- (void)dismiss:(void (^)(void))completion
+{
     __weak typeof(self) SELF = self;
     [UIView animateWithDuration:0.3 delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
         SELF.alpha = 0.0;
@@ -159,7 +166,11 @@
         SELF.menus.frame = changeRect;
     } completion:^(BOOL finished) {
         if (finished) {
-            [SELF removeFromSuperview];
+            [SELF removeLastPopoverView];
+            SELF.selfController = nil;
+            if (completion) {
+                completion();
+            }
         }
     }];
 }
@@ -210,6 +221,10 @@
     CGFloat oH = self.menusList.count * buttonheight + (self.menusList.count - 1) * thinLineHeight;
     CGFloat oX = 0;
     CGFloat oY = 75;
+    if (self.selfController.view.frame.origin.y > 0) {
+        oY = 12;
+    }
+    
     if (self.popoverPosition == ZRPopoverViewPositionCenterOfTop) {
         oX = (fullRect.size.width - oW) / 2;
     } else if (self.popoverPosition == ZRPopoverViewPositionLeftOfTop) {
@@ -238,7 +253,7 @@
         NSDictionary *dic = [self.menusList objectAtIndex:i];
         NSString *text = dic[kZRPopoverViewTitle];
         NSString *icon = dic[kZRPopoverViewIcon];
-
+        
         CGFloat bY = buttonheight * i;
         CGFloat lY = buttonheight * (i + 1);
         
@@ -272,7 +287,7 @@
             [viewBg addSubview:centreLine];
         }
     }
-
+    
     [self setFrame:fullRect];
     
     //Calculate the small triangle position
@@ -302,15 +317,18 @@
 #pragma mark - Menu's item click event
 - (void)menuItemTouch:(UIButton *)button
 {
-    [self dismiss];
-    int index = (int)button.tag;
-    if (self.menuItemTouch) {
-        self.menuItemTouch(index);
-    } else {
-        if ([self.delegate respondsToSelector:@selector(popoverView:didClick:)]) {
-            [self.delegate popoverView:self didClick:index];
+    __weak typeof(self) SELF = self;
+    [self dismiss:^{
+        int index = (int)button.tag;
+        if (SELF.menuItemTouch) {
+            SELF.menuItemTouch(index);
+        } else {
+            if ([SELF.delegate respondsToSelector:@selector(popoverView:didClick:)]) {
+                [SELF.delegate popoverView:SELF didClick:index];
+            }
         }
-    }
+    }];
+    
 }
 
 - (UIColor *)accordingToStyle1
