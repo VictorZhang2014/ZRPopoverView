@@ -52,7 +52,7 @@ typedef NS_ENUM(NSInteger)
 
 - (void)showWithController:(nonnull __kindof UIViewController *)viewController;
 
-- (void)dismiss;
+- (void)dismiss:(void (^ _Nullable )(void))completion;
 
 @end
 
