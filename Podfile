@@ -10,6 +10,6 @@ end
 
 target 'ZRPopoverView(Demo)' do
 
-pod 'ZRPopoverView’, ‘~>1.2’
+pod 'ZRPopoverView’, ‘~>1.3’
 
 end
