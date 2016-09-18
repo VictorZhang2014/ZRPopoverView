@@ -26,7 +26,7 @@
 - (void)rightBarClick
 {
     NSArray *menus = @[
-                       @{ kZRPopoverViewTitle: @"扫一扫", kZRPopoverViewIcon : @"btn_Install" }
+                       @{ kZRPopoverViewTitle: @"扫一扫", kZRPopoverViewIcon : @"shortcut_QR" }
                        ];
     ZRPopoverView *popover = [[ZRPopoverView alloc] initWithStyle:ZRPopoverViewStyleLightContent menus:menus position:ZRPopoverViewPositionRightOfTop];
     popover.delegate = self;
