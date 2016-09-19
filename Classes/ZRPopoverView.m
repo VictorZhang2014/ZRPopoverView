@@ -10,6 +10,7 @@
 
 #define RGB(r,g,b) [UIColor colorWithRed:r / 255.0 green:g / 255.0 blue:b / 255.0 alpha:1.0]
 #define TRANSLUCENT_RATE 0.85
+#define ANIMATION_DURATION 0.3
 
 @interface ZRPopoverViewTriangle : UIView
 
@@ -141,10 +142,10 @@
     self.alpha = 0.0;
     CGRect originalRect = self.menus.frame;
     CGRect changeRect = self.menus.frame;
-    changeRect.origin.y = -changeRect.size.width;
+    changeRect.origin.y = -changeRect.size.height;
     self.menus.frame = changeRect;
     [viewController.view addSubview:self];
-    [UIView animateWithDuration:0.3 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+    [UIView animateWithDuration:ANIMATION_DURATION delay:0.0 options:UIViewAnimationOptionCurveLinear animations:^{
         self.alpha = 1.0;
         self.menus.frame = originalRect;
     } completion:nil];
@@ -160,7 +161,7 @@
 - (void)dismiss:(void (^)(void))completion
 {
     __weak typeof(self) SELF = self;
-    [UIView animateWithDuration:0.3 delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+    [UIView animateWithDuration:ANIMATION_DURATION delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
         SELF.alpha = 0.0;
         CGRect changeRect = SELF.menus.frame;
         changeRect.origin.y = -changeRect.size.height;
@@ -180,7 +181,7 @@
 {
     UIView *lastView = [self.selfController.view.subviews lastObject];
     if ([lastView isKindOfClass:[ZRPopoverView class]]) {
-        [UIView animateWithDuration:0.3 delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        [UIView animateWithDuration:ANIMATION_DURATION delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
             lastView.alpha = 0.0;
             
             ZRPopoverView *tmpView = (ZRPopoverView *)lastView;
