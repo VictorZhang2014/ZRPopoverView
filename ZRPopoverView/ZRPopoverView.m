@@ -142,7 +142,7 @@
     self.alpha = 0.0;
     CGRect originalRect = self.menus.frame;
     CGRect changeRect = self.menus.frame;
-    changeRect.origin.y = -changeRect.size.height;
+    changeRect.origin.y = 0;//-changeRect.size.height;
     self.menus.frame = changeRect;
     [viewController.view addSubview:self];
     [UIView animateWithDuration:ANIMATION_DURATION delay:0.0 options:UIViewAnimationOptionCurveLinear animations:^{
@@ -164,7 +164,7 @@
     [UIView animateWithDuration:ANIMATION_DURATION delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
         SELF.alpha = 0.0;
         CGRect changeRect = SELF.menus.frame;
-        changeRect.origin.y = -changeRect.size.height;
+        changeRect.origin.y = 0;//-changeRect.size.height;
         SELF.menus.frame = changeRect;
     } completion:^(BOOL finished) {
         if (finished) {
@@ -186,7 +186,7 @@
             
             ZRPopoverView *tmpView = (ZRPopoverView *)lastView;
             CGRect changeRect = tmpView.menus.frame;
-            changeRect.origin.y = -changeRect.size.height;
+            changeRect.origin.y = 0;//-changeRect.size.height;
             tmpView.menus.frame = changeRect;
         } completion:^(BOOL finished) {
             if (finished) {
@@ -292,10 +292,10 @@
         
         //Set Button's layer is round
         if (i == 0 || (i == self.menusList.count - 1)) {
-            UIRectCorner corners;
+            UIRectCorner corners = UIRectCornerAllCorners;
             if (i == 0) {
                 corners = UIRectCornerTopLeft | UIRectCornerTopRight;
-            } else if (i == self.menusList.count - 1) {
+            } else if (i == (self.menusList.count - 1)) {
                 corners = UIRectCornerBottomLeft | UIRectCornerBottomRight;
             }
             UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:button.bounds byRoundingCorners:corners cornerRadii:CGSizeMake(8, 8)];
