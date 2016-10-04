@@ -140,7 +140,7 @@
     self.alpha = 0.0;
     CGRect originalRect = self.menus.frame;
     CGRect changeRect = self.menus.frame;
-    changeRect.origin.y = -changeRect.size.width;
+    changeRect.origin.y = -changeRect.size.height;
     self.menus.frame = changeRect;
     [viewController.view addSubview:self];
     [UIView animateWithDuration:0.3 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
@@ -178,6 +178,7 @@
 - (BOOL)removeLastPopoverView
 {
     UIView *lastView = [self.selfController.view.subviews lastObject];
+    lastView.alpha = 0.7;
     if ([lastView isKindOfClass:[ZRPopoverView class]]) {
         [UIView animateWithDuration:0.3 delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
             lastView.alpha = 0.0;

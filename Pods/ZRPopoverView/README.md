@@ -9,6 +9,11 @@ ZRPopoverView is a popover view that pop UIView with a list of button by customi
 ### Effect Photo
 ![ZRPopoverView Effect Photo 1](https://github.com/VictorZhang2014/ZRPopoverView/blob/master/pictures/ZRPopoverView_showcase_cn.gif "ZRPopoverView")
 
+![ZRPopoverView Effect Photo 2](https://github.com/VictorZhang2014/ZRPopoverView/blob/master/pictures/ZRPopoverView_showcase1.png "ZRPopoverView")
+
+![ZRPopoverView Effect Photo 3](https://github.com/VictorZhang2014/ZRPopoverView/blob/master/pictures/ZRPopoverView_showcase2.png "ZRPopoverView")
+
+
 ## How to get started
 -----------------------------------
 
@@ -24,7 +29,7 @@ ZRPopoverView is a popover view that pop UIView with a list of button by customi
 $ gem install cocoapods
 ```
 
-> Cocoapods 1.0.0+ is required to build ZRPopoverView 1.2
+> Cocoapods 1.0.0+ is required to build ZRPopoverView 1.5
 
 #### podfile
 
@@ -33,7 +38,7 @@ To integrate ZRPopoverView into your Xcode project using Cocoapods, specify it i
 ```ruby
 platform :ios, '7.0'  
 
-pod 'ZRPopoverView', '~>1.2'
+pod 'ZRPopoverView', '~>1.5'
 ```
 Then, run the following command:
 
@@ -115,7 +120,7 @@ ZRPopoverView是一个非常好用的弹出菜单，使用者可以自定义内�
 $ gem install cocoapods
 ```
 
-> Cocoapods 1.0.0+ is required to build ZRPopoverView 1.2
+> Cocoapods 1.0.0+ is required to build ZRPopoverView 1.5
 
 #### podfile
 
@@ -125,7 +130,7 @@ $ gem install cocoapods
 source 'https://github.com/VictorZhang2014/ZRPopoverView'
 platform :ios, '7.0'  
 
-pod 'ZRPopoverView', '~>1.2'
+pod 'ZRPopoverView', '~>1.5'
 ```
 接着，运行以下命令
 

@@ -1,12 +1,12 @@
 PODS:
-  - ZRPopoverView (1.2)
+  - ZRPopoverView (1.5)
 
 DEPENDENCIES:
-  - ZRPopoverView (~> 1.2)
+  - ZRPopoverView (~> 1.5)
 
 SPEC CHECKSUMS:
-  ZRPopoverView: 4af5c815216a84b874be69e394ffc29b5ec6f323
+  ZRPopoverView: 4cc8d2c5542aec09cbe7bf7ac670b99da0a15930
 
-PODFILE CHECKSUM: 7bb6bb50bf26daa0aa99f7562af32847933acdaf
+PODFILE CHECKSUM: f04f1661ca1735bf9aa5311eba4c1d7e855d151a
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.0.0
