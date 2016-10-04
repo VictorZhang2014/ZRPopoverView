@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name                  = 'ZRPopoverView'
-spec.version               = '1.4'
+spec.version               = '1.5'
 spec.license               = 'MIT'
 spec.homepage              = 'https://github.com/VictorZhang2014/ZRPopoverView'
 spec.author                = { 'Victor Zhang' => 'victorzhangq@gmail.com' }

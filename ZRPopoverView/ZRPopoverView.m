@@ -8,9 +8,7 @@
 
 #import "ZRPopoverView.h"
 
-#define RGB(r,g,b) [UIColor colorWithRed:r / 255.0 green:g / 255.0 blue:b / 255.0 alpha:1.0]
 #define TRANSLUCENT_RATE 0.85
-#define ANIMATION_DURATION 0.3
 
 @interface ZRPopoverViewTriangle : UIView
 
@@ -142,10 +140,10 @@
     self.alpha = 0.0;
     CGRect originalRect = self.menus.frame;
     CGRect changeRect = self.menus.frame;
-    changeRect.origin.y = 0;//-changeRect.size.height;
+    changeRect.origin.y = -changeRect.size.height;
     self.menus.frame = changeRect;
     [viewController.view addSubview:self];
-    [UIView animateWithDuration:ANIMATION_DURATION delay:0.0 options:UIViewAnimationOptionCurveLinear animations:^{
+    [UIView animateWithDuration:0.3 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         self.alpha = 1.0;
         self.menus.frame = originalRect;
     } completion:nil];
@@ -161,10 +159,10 @@
 - (void)dismiss:(void (^)(void))completion
 {
     __weak typeof(self) SELF = self;
-    [UIView animateWithDuration:ANIMATION_DURATION delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+    [UIView animateWithDuration:0.3 delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
         SELF.alpha = 0.0;
         CGRect changeRect = SELF.menus.frame;
-        changeRect.origin.y = 0;//-changeRect.size.height;
+        changeRect.origin.y = -changeRect.size.height;
         SELF.menus.frame = changeRect;
     } completion:^(BOOL finished) {
         if (finished) {
@@ -180,13 +178,14 @@
 - (BOOL)removeLastPopoverView
 {
     UIView *lastView = [self.selfController.view.subviews lastObject];
+    lastView.alpha = 0.7;
     if ([lastView isKindOfClass:[ZRPopoverView class]]) {
-        [UIView animateWithDuration:ANIMATION_DURATION delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        [UIView animateWithDuration:0.3 delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
             lastView.alpha = 0.0;
             
             ZRPopoverView *tmpView = (ZRPopoverView *)lastView;
             CGRect changeRect = tmpView.menus.frame;
-            changeRect.origin.y = 0;//-changeRect.size.height;
+            changeRect.origin.y = -changeRect.size.height;
             tmpView.menus.frame = changeRect;
         } completion:^(BOOL finished) {
             if (finished) {
@@ -220,7 +219,7 @@
     [self addSubview:wholeView];
     
     //Menu's background
-    CGFloat oH = self.menusList.count * buttonheight + (self.menusList.count - 2) * thinLineHeight;
+    CGFloat oH = self.menusList.count * buttonheight + (self.menusList.count - 1) * thinLineHeight;
     CGFloat oX = 0;
     CGFloat oY = 75;
     if (self.selfController.view.frame.origin.y > 0) {
@@ -256,7 +255,7 @@
         NSString *text = dic[kZRPopoverViewTitle];
         NSString *icon = dic[kZRPopoverViewIcon];
         
-        CGFloat bY = (buttonheight + thinLineHeight) * i ;
+        CGFloat bY = buttonheight * i;
         CGFloat lY = buttonheight * (i + 1);
         
         //Add button and icon
@@ -274,7 +273,6 @@
             button.titleEdgeInsets = UIEdgeInsetsMake(0, 20, 0, 0);
             [button setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
         }
-        [button addTarget:self action:@selector(touchDownHighlighted:) forControlEvents:UIControlEventTouchDown];
         [viewBg addSubview:button];
         
         //Add straight line
@@ -288,23 +286,6 @@
                 [centreLine setFrame:lineRect];
             }
             [viewBg addSubview:centreLine];
-        }
-        
-        //Set Button's layer is round
-        if (i == 0 || (i == self.menusList.count - 1)) {
-            UIRectCorner corners = UIRectCornerAllCorners;
-            if (i == 0) {
-                corners = UIRectCornerTopLeft | UIRectCornerTopRight;
-            } else if (i == (self.menusList.count - 1)) {
-                corners = UIRectCornerBottomLeft | UIRectCornerBottomRight;
-            } else {
-                
-            }
-            UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:button.bounds byRoundingCorners:corners cornerRadii:CGSizeMake(8, 8)];
-            CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
-            maskLayer.frame = button.bounds;
-            maskLayer.path = maskPath.CGPath;
-            button.layer.mask = maskLayer;
         }
     }
     
@@ -349,15 +330,6 @@
         }
     }];
     
-}
-
-- (void)touchDownHighlighted:(UIButton *)button
-{
-    if (self.popoverStyle == ZRPopoverViewStyleLightContent) {
-        [button setBackgroundColor:RGB(248.0, 248.0, 248.0)];
-    } else if (self.popoverStyle == ZRPopoverViewStyleDefault){
-        [button setBackgroundColor:RGB(20, 20, 20)];
-    }
 }
 
 - (UIColor *)accordingToStyle1
