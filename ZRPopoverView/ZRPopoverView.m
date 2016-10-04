@@ -297,6 +297,8 @@
                 corners = UIRectCornerTopLeft | UIRectCornerTopRight;
             } else if (i == (self.menusList.count - 1)) {
                 corners = UIRectCornerBottomLeft | UIRectCornerBottomRight;
+            } else {
+                
             }
             UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:button.bounds byRoundingCorners:corners cornerRadii:CGSizeMake(8, 8)];
             CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
