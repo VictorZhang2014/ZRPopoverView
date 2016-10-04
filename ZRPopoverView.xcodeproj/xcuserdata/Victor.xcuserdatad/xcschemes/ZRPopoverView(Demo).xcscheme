@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9032C73F1D86C90C0067A92D"
-               BuildableName = "ZRPopoverView.app"
-               BlueprintName = "ZRPopoverView"
+               BlueprintIdentifier = "5768D5651DA3AD2100BC13B3"
+               BuildableName = "ZRPopoverView(Demo).app"
+               BlueprintName = "ZRPopoverView(Demo)"
                ReferencedContainer = "container:ZRPopoverView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9032C73F1D86C90C0067A92D"
-            BuildableName = "ZRPopoverView.app"
-            BlueprintName = "ZRPopoverView"
+            BlueprintIdentifier = "5768D5651DA3AD2100BC13B3"
+            BuildableName = "ZRPopoverView(Demo).app"
+            BlueprintName = "ZRPopoverView(Demo)"
             ReferencedContainer = "container:ZRPopoverView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -55,9 +55,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9032C73F1D86C90C0067A92D"
-            BuildableName = "ZRPopoverView.app"
-            BlueprintName = "ZRPopoverView"
+            BlueprintIdentifier = "5768D5651DA3AD2100BC13B3"
+            BuildableName = "ZRPopoverView(Demo).app"
+            BlueprintName = "ZRPopoverView(Demo)"
             ReferencedContainer = "container:ZRPopoverView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -81,9 +81,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9032C73F1D86C90C0067A92D"
-            BuildableName = "ZRPopoverView.app"
-            BlueprintName = "ZRPopoverView"
+            BlueprintIdentifier = "5768D5651DA3AD2100BC13B3"
+            BuildableName = "ZRPopoverView(Demo).app"
+            BlueprintName = "ZRPopoverView(Demo)"
             ReferencedContainer = "container:ZRPopoverView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

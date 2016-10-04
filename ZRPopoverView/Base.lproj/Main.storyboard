@@ -37,6 +37,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Choose" id="1DE-Zh-Gfm">
                         <barButtonItem key="leftBarButtonItem" systemItem="camera" id="XE1-53-bJr">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="showCameraSelection:" destination="Nka-QR-ITB" id="EUA-nf-Gt9"/>
                             </connections>
