@@ -7,8 +7,7 @@
 //
 
 #import "ViewController.h"
-//#import "ZRPopoverView.h"
-#import <ZRPopoverView/ZRPopoverView.h>
+#import "ZRPopoverView.h"
 
 @interface ViewController ()<ZRPopoverViewDelegate, UITableViewDataSource, UITableViewDelegate>
 - (IBAction)leftBar:(id)sender;

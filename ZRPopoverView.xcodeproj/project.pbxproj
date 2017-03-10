@@ -7,29 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		241789441E72A3D700546D68 /* ZRPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 241789421E72A3D700546D68 /* ZRPopoverView.m */; };
+		2417894E1E72A4D900546D68 /* ZRPopView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2417894C1E72A4D900546D68 /* ZRPopView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		241789511E72A4D900546D68 /* ZRPopView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2417894A1E72A4D900546D68 /* ZRPopView.framework */; };
+		241789521E72A4D900546D68 /* ZRPopView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2417894A1E72A4D900546D68 /* ZRPopView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		241789571E72A57400546D68 /* ZRPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 241789421E72A3D700546D68 /* ZRPopoverView.m */; };
+		241789581E72A57800546D68 /* ZRPopoverView.h in Headers */ = {isa = PBXBuildFile; fileRef = 241789411E72A3D700546D68 /* ZRPopoverView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5768D56A1DA3AD2100BC13B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5768D5691DA3AD2100BC13B3 /* main.m */; };
 		5768D56D1DA3AD2100BC13B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5768D56C1DA3AD2100BC13B3 /* AppDelegate.m */; };
 		5768D5731DA3AD2100BC13B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5768D5711DA3AD2100BC13B3 /* Main.storyboard */; };
 		5768D5751DA3AD2100BC13B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5768D5741DA3AD2100BC13B3 /* Assets.xcassets */; };
 		5768D5781DA3AD2200BC13B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5768D5761DA3AD2200BC13B3 /* LaunchScreen.storyboard */; };
 		5768D57F1DA3AF5500BC13B3 /* ZRDMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5768D57E1DA3AF5500BC13B3 /* ZRDMViewController.m */; };
-		83548F03462B7E1E156BB38B /* libPods-ZRPopoverView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A18C8C7C0A6F2949AD6820C2 /* libPods-ZRPopoverView.a */; };
-		867C2601447975AEFF4C50A0 /* libPods-ZRPopoverView-ZRPopoverView(Demo).a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F16623C264BC6B89F621637 /* libPods-ZRPopoverView-ZRPopoverView(Demo).a */; };
 		9032C7451D86C90C0067A92D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9032C7441D86C90C0067A92D /* main.m */; };
 		9032C7481D86C90C0067A92D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9032C7471D86C90C0067A92D /* AppDelegate.m */; };
 		9032C74B1D86C90C0067A92D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9032C74A1D86C90C0067A92D /* ViewController.m */; };
 		9032C74E1D86C90C0067A92D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9032C74C1D86C90C0067A92D /* Main.storyboard */; };
 		9032C7501D86C90D0067A92D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9032C74F1D86C90D0067A92D /* Assets.xcassets */; };
 		9032C7531D86C90D0067A92D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9032C7511D86C90D0067A92D /* LaunchScreen.storyboard */; };
-		9032C75C1D86C9210067A92D /* ZRPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9032C75B1D86C9210067A92D /* ZRPopoverView.m */; };
-		EABE3979C79377620AE5D1A2 /* libPods-ZRPopoverView(Demo).a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6CF67526640F322B5CA838 /* libPods-ZRPopoverView(Demo).a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2417894F1E72A4D900546D68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9032C7381D86C90C0067A92D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 241789491E72A4D900546D68;
+			remoteInfo = ZRPopView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		241789561E72A4D900546D68 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				241789521E72A4D900546D68 /* ZRPopView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		03992C471AED499039EA80C1 /* Pods-ZRPopoverView(Demo).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZRPopoverView(Demo).release.xcconfig"; path = "Pods/Target Support Files/Pods-ZRPopoverView(Demo)/Pods-ZRPopoverView(Demo).release.xcconfig"; sourceTree = "<group>"; };
-		0F6CF67526640F322B5CA838 /* libPods-ZRPopoverView(Demo).a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZRPopoverView(Demo).a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		326DB6447EA11A0870D0D40A /* Pods-ZRPopoverView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZRPopoverView.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZRPopoverView/Pods-ZRPopoverView.release.xcconfig"; sourceTree = "<group>"; };
-		3BF1EB7A590B24141914FB44 /* Pods-ZRPopoverView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZRPopoverView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZRPopoverView/Pods-ZRPopoverView.debug.xcconfig"; sourceTree = "<group>"; };
+		241789411E72A3D700546D68 /* ZRPopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZRPopoverView.h; sourceTree = "<group>"; };
+		241789421E72A3D700546D68 /* ZRPopoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZRPopoverView.m; sourceTree = "<group>"; };
+		2417894A1E72A4D900546D68 /* ZRPopView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZRPopView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2417894C1E72A4D900546D68 /* ZRPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRPopView.h; sourceTree = "<group>"; };
+		2417894D1E72A4D900546D68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5768D5661DA3AD2100BC13B3 /* ZRPopoverView(Demo).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ZRPopoverView(Demo).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5768D5691DA3AD2100BC13B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5768D56B1DA3AD2100BC13B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -50,22 +77,20 @@
 		9032C74F1D86C90D0067A92D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9032C7521D86C90D0067A92D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9032C7541D86C90D0067A92D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9032C75A1D86C9210067A92D /* ZRPopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZRPopoverView.h; sourceTree = "<group>"; };
-		9032C75B1D86C9210067A92D /* ZRPopoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZRPopoverView.m; sourceTree = "<group>"; };
-		9F16623C264BC6B89F621637 /* libPods-ZRPopoverView-ZRPopoverView(Demo).a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZRPopoverView-ZRPopoverView(Demo).a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A18C8C7C0A6F2949AD6820C2 /* libPods-ZRPopoverView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZRPopoverView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB9B6370B34266A01EE141A9 /* Pods-ZRPopoverView-ZRPopoverView(Demo).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZRPopoverView-ZRPopoverView(Demo).debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZRPopoverView-ZRPopoverView(Demo)/Pods-ZRPopoverView-ZRPopoverView(Demo).debug.xcconfig"; sourceTree = "<group>"; };
-		C01852C565692D62A191BA7F /* Pods-ZRPopoverView(Demo).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZRPopoverView(Demo).debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZRPopoverView(Demo)/Pods-ZRPopoverView(Demo).debug.xcconfig"; sourceTree = "<group>"; };
-		ECBB3760ADB34DB38083B5DF /* Pods-ZRPopoverView-ZRPopoverView(Demo).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZRPopoverView-ZRPopoverView(Demo).release.xcconfig"; path = "Pods/Target Support Files/Pods-ZRPopoverView-ZRPopoverView(Demo)/Pods-ZRPopoverView-ZRPopoverView(Demo).release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		241789461E72A4D900546D68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5768D5631DA3AD2100BC13B3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EABE3979C79377620AE5D1A2 /* libPods-ZRPopoverView(Demo).a in Frameworks */,
-				867C2601447975AEFF4C50A0 /* libPods-ZRPopoverView-ZRPopoverView(Demo).a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,13 +98,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83548F03462B7E1E156BB38B /* libPods-ZRPopoverView.a in Frameworks */,
+				241789511E72A4D900546D68 /* ZRPopView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2417893F1E72A3D700546D68 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				241789411E72A3D700546D68 /* ZRPopoverView.h */,
+				241789421E72A3D700546D68 /* ZRPopoverView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2417894B1E72A4D900546D68 /* ZRPopView */ = {
+			isa = PBXGroup;
+			children = (
+				2417894C1E72A4D900546D68 /* ZRPopView.h */,
+				2417894D1E72A4D900546D68 /* Info.plist */,
+			);
+			path = ZRPopView;
+			sourceTree = "<group>";
+		};
 		5768D5671DA3AD2100BC13B3 /* ZRPopoverView(Demo) */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,10 +150,11 @@
 		9032C7371D86C90C0067A92D = {
 			isa = PBXGroup;
 			children = (
+				2417893F1E72A3D700546D68 /* Classes */,
 				9032C7421D86C90C0067A92D /* ZRPopoverView */,
 				5768D5671DA3AD2100BC13B3 /* ZRPopoverView(Demo) */,
+				2417894B1E72A4D900546D68 /* ZRPopView */,
 				9032C7411D86C90C0067A92D /* Products */,
-				D7EEFE26ED125F4F24369A67 /* Pods */,
 				DA6F0338A666B917A43FE81A /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -120,6 +164,7 @@
 			children = (
 				9032C7401D86C90C0067A92D /* ZRPopoverView.app */,
 				5768D5661DA3AD2100BC13B3 /* ZRPopoverView(Demo).app */,
+				2417894A1E72A4D900546D68 /* ZRPopView.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,8 +176,6 @@
 				9032C7471D86C90C0067A92D /* AppDelegate.m */,
 				9032C7491D86C90C0067A92D /* ViewController.h */,
 				9032C74A1D86C90C0067A92D /* ViewController.m */,
-				9032C75A1D86C9210067A92D /* ZRPopoverView.h */,
-				9032C75B1D86C9210067A92D /* ZRPopoverView.m */,
 				9032C74C1D86C90C0067A92D /* Main.storyboard */,
 				9032C74F1D86C90D0067A92D /* Assets.xcassets */,
 				9032C7511D86C90D0067A92D /* LaunchScreen.storyboard */,
@@ -150,42 +193,53 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D7EEFE26ED125F4F24369A67 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3BF1EB7A590B24141914FB44 /* Pods-ZRPopoverView.debug.xcconfig */,
-				326DB6447EA11A0870D0D40A /* Pods-ZRPopoverView.release.xcconfig */,
-				C01852C565692D62A191BA7F /* Pods-ZRPopoverView(Demo).debug.xcconfig */,
-				03992C471AED499039EA80C1 /* Pods-ZRPopoverView(Demo).release.xcconfig */,
-				BB9B6370B34266A01EE141A9 /* Pods-ZRPopoverView-ZRPopoverView(Demo).debug.xcconfig */,
-				ECBB3760ADB34DB38083B5DF /* Pods-ZRPopoverView-ZRPopoverView(Demo).release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		DA6F0338A666B917A43FE81A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A18C8C7C0A6F2949AD6820C2 /* libPods-ZRPopoverView.a */,
-				0F6CF67526640F322B5CA838 /* libPods-ZRPopoverView(Demo).a */,
-				9F16623C264BC6B89F621637 /* libPods-ZRPopoverView-ZRPopoverView(Demo).a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		241789471E72A4D900546D68 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2417894E1E72A4D900546D68 /* ZRPopView.h in Headers */,
+				241789581E72A57800546D68 /* ZRPopoverView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		241789491E72A4D900546D68 /* ZRPopView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 241789531E72A4D900546D68 /* Build configuration list for PBXNativeTarget "ZRPopView" */;
+			buildPhases = (
+				241789451E72A4D900546D68 /* Sources */,
+				241789461E72A4D900546D68 /* Frameworks */,
+				241789471E72A4D900546D68 /* Headers */,
+				241789481E72A4D900546D68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZRPopView;
+			productName = ZRPopView;
+			productReference = 2417894A1E72A4D900546D68 /* ZRPopView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		5768D5651DA3AD2100BC13B3 /* ZRPopoverView(Demo) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5768D57A1DA3AD2200BC13B3 /* Build configuration list for PBXNativeTarget "ZRPopoverView(Demo)" */;
 			buildPhases = (
-				E5DC530E8032558F2D9216B5 /* 📦 Check Pods Manifest.lock */,
 				5768D5621DA3AD2100BC13B3 /* Sources */,
 				5768D5631DA3AD2100BC13B3 /* Frameworks */,
 				5768D5641DA3AD2100BC13B3 /* Resources */,
-				3838E317183783ACBA735013 /* 📦 Embed Pods Frameworks */,
-				E3BA2868B8836C64B0614F58 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,19 +254,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9032C7571D86C90D0067A92D /* Build configuration list for PBXNativeTarget "ZRPopoverView" */;
 			buildPhases = (
-				BF909A4F3D8C9B5B8EB0100D /* 📦 Check Pods Manifest.lock */,
-				0177969F24147775C5BD38B2 /* [CP] Check Pods Manifest.lock */,
 				9032C73C1D86C90C0067A92D /* Sources */,
 				9032C73D1D86C90C0067A92D /* Frameworks */,
 				9032C73E1D86C90C0067A92D /* Resources */,
-				FE5EE0438A4E2244F3BC2311 /* [CP] Embed Pods Frameworks */,
-				A05682FF4C2E1EAF479946CA /* [CP] Copy Pods Resources */,
-				DF737B15840DD7383D6C3282 /* 📦 Embed Pods Frameworks */,
-				7190CC4833299AF1319122B3 /* 📦 Copy Pods Resources */,
+				241789561E72A4D900546D68 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				241789501E72A4D900546D68 /* PBXTargetDependency */,
 			);
 			name = ZRPopoverView;
 			productName = ZRPopoverView;
@@ -228,6 +278,11 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = xiaoruigege;
 				TargetAttributes = {
+					241789491E72A4D900546D68 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = B873AZ7BS6;
+						ProvisioningStyle = Automatic;
+					};
 					5768D5651DA3AD2100BC13B3 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = B873AZ7BS6;
@@ -255,11 +310,19 @@
 			targets = (
 				9032C73F1D86C90C0067A92D /* ZRPopoverView */,
 				5768D5651DA3AD2100BC13B3 /* ZRPopoverView(Demo) */,
+				241789491E72A4D900546D68 /* ZRPopView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		241789481E72A4D900546D68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5768D5641DA3AD2100BC13B3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -282,145 +345,15 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		0177969F24147775C5BD38B2 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		3838E317183783ACBA735013 /* 📦 Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZRPopoverView(Demo)/Pods-ZRPopoverView(Demo)-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7190CC4833299AF1319122B3 /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZRPopoverView/Pods-ZRPopoverView-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A05682FF4C2E1EAF479946CA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZRPopoverView/Pods-ZRPopoverView-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BF909A4F3D8C9B5B8EB0100D /* 📦 Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		DF737B15840DD7383D6C3282 /* 📦 Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZRPopoverView/Pods-ZRPopoverView-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E3BA2868B8836C64B0614F58 /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZRPopoverView(Demo)/Pods-ZRPopoverView(Demo)-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E5DC530E8032558F2D9216B5 /* 📦 Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		FE5EE0438A4E2244F3BC2311 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZRPopoverView/Pods-ZRPopoverView-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
+		241789451E72A4D900546D68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				241789571E72A57400546D68 /* ZRPopoverView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5768D5621DA3AD2100BC13B3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -435,14 +368,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9032C75C1D86C9210067A92D /* ZRPopoverView.m in Sources */,
 				9032C74B1D86C90C0067A92D /* ViewController.m in Sources */,
 				9032C7481D86C90C0067A92D /* AppDelegate.m in Sources */,
 				9032C7451D86C90C0067A92D /* main.m in Sources */,
+				241789441E72A3D700546D68 /* ZRPopoverView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		241789501E72A4D900546D68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 241789491E72A4D900546D68 /* ZRPopView */;
+			targetProxy = 2417894F1E72A4D900546D68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5768D5711DA3AD2100BC13B3 /* Main.storyboard */ = {
@@ -480,9 +421,60 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		241789541E72A4D900546D68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = B873AZ7BS6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ZRPopView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CrazyKids.ZRPopView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		241789551E72A4D900546D68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = B873AZ7BS6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ZRPopView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CrazyKids.ZRPopView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		5768D57B1DA3AD2200BC13B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C01852C565692D62A191BA7F /* Pods-ZRPopoverView(Demo).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -499,7 +491,6 @@
 		};
 		5768D57C1DA3AD2200BC13B3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03992C471AED499039EA80C1 /* Pods-ZRPopoverView(Demo).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -598,7 +589,6 @@
 		};
 		9032C7581D86C90D0067A92D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3BF1EB7A590B24141914FB44 /* Pods-ZRPopoverView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -617,7 +607,6 @@
 		};
 		9032C7591D86C90D0067A92D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 326DB6447EA11A0870D0D40A /* Pods-ZRPopoverView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -637,6 +626,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		241789531E72A4D900546D68 /* Build configuration list for PBXNativeTarget "ZRPopView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				241789541E72A4D900546D68 /* Debug */,
+				241789551E72A4D900546D68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		5768D57A1DA3AD2200BC13B3 /* Build configuration list for PBXNativeTarget "ZRPopoverView(Demo)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

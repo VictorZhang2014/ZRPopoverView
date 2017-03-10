@@ -23,6 +23,8 @@ ZRPopoverView is a popover view that pop UIView with a list of button by customi
 ## Installation
 -----------------------------------
 
+### CocoaPods
+
 [CocoaPods](http://cocoapods.org) is a dependency manager for Objective-C , which anutomates and simplifies the process of using 3rd-party libraries like ZRPopoverView in you projects.
 
 ```bash
@@ -45,7 +47,24 @@ Then, run the following command:
 ```bash
 $ pod install
 ```
+### Carthage
 
+[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.
+
+You can install Carthage with [Homebrew](http://brew.sh/) using the following command:
+
+```bash
+$ brew update
+$ brew install carthage
+```
+
+To integrate SnapKit into your Xcode project using Carthage, specify it in your `Cartfile`:
+
+```ogdl
+github "VictorZhang2014/ZRPopoverView"
+```
+
+Run `carthage update` to build the framework and drag the built `ZRPopView.framework` into your Xcode project.
 
 ## Usage
 ----------------------------------
@@ -114,6 +133,8 @@ ZRPopoverView是一个非常好用的弹出菜单，使用者可以自定义内�
 ## 安装
 -----------------------------------
 
+### CocoaPods
+
 [CocoaPods](http://cocoapods.org) Cocoapods是一个Objective-C的库文件依赖管理器，它会自动的，简单化的集成第三方库到你的项目，例如ZRPopoverView。
 
 ```bash
@@ -137,6 +158,26 @@ pod 'ZRPopoverView', '~>1.5'
 ```bash
 $ pod install
 ```
+
+### Carthage
+
+[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.
+
+You can install Carthage with [Homebrew](http://brew.sh/) using the following command:
+
+```bash
+$ brew update
+$ brew install carthage
+```
+
+To integrate SnapKit into your Xcode project using Carthage, specify it in your `Cartfile`:
+
+```ogdl
+github "VictorZhang2014/ZRPopoverView"
+```
+
+Run `carthage update` to build the framework and drag the built `ZRPopView.framework` into your Xcode project.
+
 
 ## 使用方法
 ----------------------------------
