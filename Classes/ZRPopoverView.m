@@ -87,7 +87,7 @@
 
 @property (atomic, strong)  NSArray* _Nonnull menusList;
 
-@property (nonatomic, strong) __kindof UIViewController *selfController;
+@property (nonatomic, weak) __kindof UIViewController *selfController;
 
 @property (nonatomic, strong) UIView *menus;
 
@@ -178,20 +178,22 @@
 - (BOOL)removeLastPopoverView
 {
     UIView *lastView = [self.selfController.view.subviews lastObject];
-    lastView.alpha = 0.7;
+//    lastView.alpha = 0.7;
     if ([lastView isKindOfClass:[ZRPopoverView class]]) {
-        [UIView animateWithDuration:0.3 delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-            lastView.alpha = 0.0;
-            
-            ZRPopoverView *tmpView = (ZRPopoverView *)lastView;
-            CGRect changeRect = tmpView.menus.frame;
-            changeRect.origin.y = -changeRect.size.height;
-            tmpView.menus.frame = changeRect;
-        } completion:^(BOOL finished) {
-            if (finished) {
-                [lastView removeFromSuperview];
-            }
-        }];
+//        [UIView animateWithDuration:0.3 delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+//            lastView.alpha = 0.0;
+//            
+//            ZRPopoverView *tmpView = (ZRPopoverView *)lastView;
+//            CGRect changeRect = tmpView.menus.frame;
+//            changeRect.origin.y = -changeRect.size.height;
+//            tmpView.menus.frame = changeRect;
+//        } completion:^(BOOL finished) {
+//            if (finished) {
+//                [lastView removeFromSuperview];
+//            }
+//        }];
+        
+        [lastView removeFromSuperview];
         return NO;
     }
     return YES;

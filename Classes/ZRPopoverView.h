@@ -14,6 +14,8 @@
 #define kZRPopoverViewTitle @"ZRPopoverViewTitle"
 #define kZRPopoverViewIcon  @"ZRPopoverViewIcon"
 
+NS_ASSUME_NONNULL_BEGIN
+
 typedef  void(^ _Nullable MenuItemTouch)(int index);
 
 typedef NS_ENUM(NSInteger)
@@ -55,5 +57,7 @@ typedef NS_ENUM(NSInteger)
 - (void)dismiss:(void (^ _Nullable )(void))completion;
 
 @end
+
+NS_ASSUME_NONNULL_END
 
 #endif
