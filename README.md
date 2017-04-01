@@ -1,6 +1,12 @@
 
 # ZRPopoverView
 ZRPopoverView is a popover view that pop UIView with a list of button by customising events and contents.
+
+[![Carthage Version](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/VictorZhang2014/ZRPopoverView)
+[![Cocoapods Version](https://img.shields.io/cocoapods/v/ZRPopoverView.svg?style=flat)](http://cocoapods.org/pods/ZRPopoverView)
+[![License](https://img.shields.io/cocoapods/l/ZRPopoverView.svg?style=flat)](http://cocoapods.org/pods/ZRPopoverView)
+[![Platform](https://img.shields.io/cocoapods/p/ZRPopoverView.svg?style=flat)](http://cocoapods.org/pods/ZRPopoverView)
+
 #####
 1.If you like invoke this events by block so that Choose No.1 .
 #####
